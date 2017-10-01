@@ -1,0 +1,40 @@
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+#intro {
+  height: 25em;
+  background: linear-gradient(rgba(51,51,51,0.84), rgba(51,51,51,0.84)), url("../images/rc1.jpg");
+}
+.title {
+  display: none;
+}
+.title h1 {
+  color: #fff;
+  margin: auto;
+  padding-top: 1em;
+  width: 10em;
+  font-size: 5em;
+}
+.left {
+  display: inline-block;
+  padding-top: 1em;
+  width: 50%;
+  float: left;
+  height: 25em;
+  background-color: #b22222;
+}
+.left p {
+  padding-left: 10%;
+  padding-bottom: 0.7em;
+  color: #fff;
+  font-size: 1.5em;
+}
+.right {
+  display: inline-block;
+  height: 26em;
+  background-image: url("../images/profile.jpg");
+  background-position-y: center;
+  background-size: cover;
+  width: 50%;
+}
