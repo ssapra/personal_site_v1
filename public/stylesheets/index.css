@@ -1,3 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 html {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -10,25 +58,79 @@ html {
   display: none;
 }
 .title h1 {
+  text-align: center;
   color: #fff;
   margin: auto;
   padding-top: 1em;
   width: 10em;
   font-size: 5em;
+  letter-spacing: -0.02em;
+}
+@media (max-width: 1250px) {
+  .left p {
+    font-size: 1em;
+  }
+}
+@media (max-width: 1050px) {
+  .right {
+    background-position-x: -80px;
+  }
+}
+@media (max-width: 950px) {
+  .right {
+    background-position-x: -150px;
+  }
+}
+@media (max-width: 800px) {
+  .title h1 {
+    font-size: 4em;
+  }
+  .right {
+    background-position-x: -199px;
+  }
+}
+@media (max-width: 700px) {
+  .title h1 {
+    width: 8em;
+  }
+  .right {
+    display: none !important;
+  }
+  .left {
+    width: 100%;
+    height: 35em !important;
+  }
+  .left p {
+    text-align: center;
+  }
+  .left img {
+    display: block !important;
+  }
+}
+@media (max-width: 530px) {
+  .title h1 {
+    width: 6em;
+  }
 }
 .left {
   display: inline-block;
   padding-top: 1em;
-  width: 50%;
   float: left;
-  height: 25em;
+  height: 26em;
   background-color: #b22222;
 }
 .left p {
   padding-left: 10%;
+  padding-right: 10%;
   padding-bottom: 0.7em;
   color: #fff;
-  font-size: 1.5em;
+  font-size: 1.3em;
+}
+.left img {
+  text-align: center;
+  width: 200px;
+  margin: 0 auto;
+  display: none;
 }
 .right {
   display: inline-block;
@@ -36,5 +138,4 @@ html {
   background-image: url("../images/profile.jpg");
   background-position-y: center;
   background-size: cover;
-  width: 50%;
 }
