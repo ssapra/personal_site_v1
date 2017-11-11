@@ -66,7 +66,6 @@ html {
   font-size: 5em;
   letter-spacing: -0.02em;
 }
-
 img {
   z-index: 10;
   position: absolute;
@@ -76,7 +75,7 @@ img {
   margin: 0 auto;
 }
 .content-body {
-  background-color: #b22222;  
+  background-color: #b22222;
   height: auto;
   margin-top: 40px;
 }
@@ -88,22 +87,25 @@ img {
   font-size: 1.5em;
   text-align: center;
 }
-
 a.link {
   color: #fff;
   text-decoration: none;
   border-bottom-width: 1px;
   border-bottom-style: solid;
 }
-
 a.link:hover {
   cursor: pointer;
   text-shadow: 0 0 2px #999;
   border-bottom-width: 2px;
 }
-
-html, body { margin: 0; padding: 0; height: 100%; width: 100%; background-color: #b22222; }
-
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #b22222;
+}
 @media (max-width: 1250px) {
   .content-body p {
     font-size: 1.3em;
