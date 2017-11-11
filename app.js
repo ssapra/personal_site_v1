@@ -10,7 +10,10 @@ var index = require('./routes/index');
 var new_items = require('./routes/new_items');
 var items = require('./routes/items');
 
+
+var compression = require('compression');
 var app = express();
+app.use(compression());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
