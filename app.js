@@ -16,7 +16,7 @@ var items = require('./routes/items');
 var app = express();
 app.use(compression());
 app.use(serveStatic(path.join(__dirname, 'public'), {
-  maxAge: '1d'
+  maxAge: '1w'
 }))
 
 // view engine setup
