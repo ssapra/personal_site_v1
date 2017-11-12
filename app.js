@@ -5,12 +5,15 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var stylus = require('stylus');
+var compression = require('compression');
 
 var index = require('./routes/index');
 var new_items = require('./routes/new_items');
 var items = require('./routes/items');
 
+
 var app = express();
+app.use(compression())
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
