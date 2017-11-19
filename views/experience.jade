@@ -1,0 +1,35 @@
+extends layout
+
+block content
+    .col-12
+        nav
+            ul
+                li 
+                    a(href="/") Home
+                li 
+                    a(href="https://www.dropbox.com/s/1r9eoksyl2detiv/Resume.pdf", target="_") Resume
+    h1.experience-title Experience
+    .col-12.content-body
+        .col-10.experience-section
+            .experience-image
+                a(href='http://www.enova.com' target="_")
+                    img(src='../images/enova.png')
+                    
+            .descriptions
+                p 
+                    | In my 2.5 years since June 2015, I've worked on a variety of projects, ranging from Golang to Rails. I migrated financial reporting from a legacy Ruby application to Go application, improving accuracy in monthly review by accountants and application runtime by several hours.
+                p 
+                    | I delivered a Rails application to automate asset-backed securitization for over $100M, reducing tens of hours of manual work per week to several hours with little work
+                p
+                    | Switching to a performance team, I tuned the garbage collector and optimized the frontend application, leading to 30-40% faster response times and reduced page load time for international customers. I then lead an upgrade effort to advance our legacy application to support new infrastucture, coordinating deployment, monitoring production, and communicating progress with stakeholders.
+        .col-10.experience-section
+            .experience-image
+                a(href='http://www.opower.com' target="_")
+                    img(src='../images/opower.png')
+            .descriptions
+                p 
+                    |  As an intern in 2014, I adapted a Rails application to handle new location-based functionality to communicate with iOS and Android apps for thousands of customers using smart thermostats.
+                p 
+                    |  I was able to collaborate with team leaders to develop new user interface in AngularJS application to improve customer experience in controlling smart thermostats.
+                p
+                    |  In addition, I upgraded the legacy Customer Service Portal to provide customer status by modifying SQL view, creating new server endpoints, and updating AngularJS application.

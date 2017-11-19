@@ -66,7 +66,7 @@ html {
   font-size: 5em;
   letter-spacing: -0.02em;
 }
-img {
+.face {
   z-index: 10;
   position: absolute;
   right: 30px;
@@ -88,6 +88,19 @@ nav ul li a {
   color: #fff;
   font-size: 1em;
 }
+.home-body {
+  background: linear-gradient(to right bottom, #30415d, #495f82);
+  height: auto;
+  padding-top: 40px;
+}
+.home-body p {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 0.7em;
+  color: #fff;
+  font-size: 1.5em;
+  text-align: center;
+}
 .content-body {
   background: linear-gradient(to right bottom, #30415d, #495f82);
   height: auto;
@@ -95,11 +108,35 @@ nav ul li a {
 }
 .content-body p {
   padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 0.7em;
   color: #fff;
-  font-size: 1.5em;
+  font-size: 1em;
+}
+.experience-title {
+  color: #fff;
   text-align: center;
+  font-weight: 500;
+}
+.experience-section {
+  margin: 0 auto;
+  float: none;
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+.experience-section .experience-image {
+  width: 25%;
+  flex: 1;
+  position: relative;
+}
+.experience-section .experience-image img {
+  width: 70%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.experience-section .descriptions {
+  width: 75%;
 }
 a.link {
   color: #fff;

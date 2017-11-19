@@ -11,6 +11,7 @@ var compression = require('compression');
 var index = require('./routes/index');
 var new_items = require('./routes/new_items');
 var items = require('./routes/items');
+var experience = require('./routes/experience');
 
 
 var app = express();
@@ -33,6 +34,7 @@ app.use(stylus.middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
+app.use('/experience', experience);
 app.use('/new', new_items);
 app.use('/items', items);
 
