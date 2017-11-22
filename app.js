@@ -1,7 +1,7 @@
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
-var serveStatic = require('serve-static');
+// var serveStatic = require('serve-static');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
@@ -12,13 +12,14 @@ var index = require('./routes/index');
 var new_items = require('./routes/new_items');
 var items = require('./routes/items');
 var experience = require('./routes/experience');
+var play = require('./routes/play');
 
 
 var app = express();
 app.use(compression());
-app.use(serveStatic(path.join(__dirname, 'public'), {
-  maxAge: '1w'
-}))
+// app.use(serveStatic(path.join(__dirname, 'public'), {
+//   maxAge: '1w'
+// }))
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -37,6 +38,7 @@ app.use('/', index);
 app.use('/experience', experience);
 app.use('/new', new_items);
 app.use('/items', items);
+app.use('/play', play);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
